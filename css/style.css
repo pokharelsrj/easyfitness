@@ -1,0 +1,93 @@
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ruda&display=swap');
+html, body, {
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+#mainimg
+{
+    background-image: url(../images/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 780px;
+    
+}
+
+.main-txt-box
+{
+   
+   padding-left: 150px;
+    
+}
+
+
+
+.intro_text{
+    color:white;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 60px;
+    
+    
+}
+
+#about_us
+{
+    
+    font-family: 'Nanum Myeongjo', ;
+}
+.nav1
+{
+    font-size: 20px;
+    
+}
+
+.menu_hover{
+    margin-left: 40px;
+}
+.menu_hover span:hover{
+    padding-bottom: 5px;
+    border-bottom: 1px solid red;
+    
+   
+}
+
+
+/*About Us*/
+
+#about_us{
+    background-color: 	#f2f2f2;
+}
+
+.topics{
+    
+    font-family: 'Josefin Slab', serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
+}
+
+.topics::after {
+    display: block;
+    height: 2px;
+    width: 100px;
+    background-color: red;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.abt_us_para{
+    font-family: 'Ruda', sans-serif;
+    font-size: 120%;
+    line-height: 170%;
+    letter-spacing: 1px;
+}
