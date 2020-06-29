@@ -12,7 +12,9 @@ html, body, {
     right:0;
 }
 
-#mainimg
+
+
+.mainimg
 {
     background-image: url(../images/1.jpg);
     background-size: cover;
@@ -38,7 +40,48 @@ html, body, {
     
 }
 
-#about_us
+/* Socials */
+.fa {
+  padding: 8px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+    color:white;
+}
+
+.fa:hover {
+    text-decoration: none;
+    color:white;
+    opacity: 0.6;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+
+hr.new1 {
+    margin: 0px;
+  border-top: 0.5px solid white;
+}
+
+
+.about_us
 {
     
     font-family: 'Nanum Myeongjo', ;
