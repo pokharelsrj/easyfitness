@@ -4,12 +4,23 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ruda&display=swap');
- body {
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
      width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
+    min-height: 100%;
     overflow-x: hidden;
+    overflow: visible;
+     
 }
 html{
     scroll-behavior: smooth;
@@ -18,6 +29,9 @@ html{
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+    position: relative;
+    min-height: 100%;
+   overflow: visible;
 }
 
 
@@ -114,7 +128,7 @@ hr.new1 {
 /*About Us*/
 
 #about_us{
-    background-color: 	#f2f2f2;
+    background-color: 	#ffff;
    padding-bottom: 40px;
 }
 
@@ -153,13 +167,27 @@ hr.new1 {
  }
 
 
+#container{
+    min-height: 100%;
+    
+}
 
+#main{
+    overflow: auto;
+    padding-bottom: 170px;
+}
 
 
 
 /* Footer */
 #footer{
     padding-top: 20px;
-    padding-bottom: 20px;
+    position: relative;
+    height: 170px;
+    margin-top: -170px;
+    clear: both;
+    
     
 }
+
+
