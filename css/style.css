@@ -4,12 +4,20 @@
 @import url('https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Ruda&display=swap');
-html, body, {
-    position:fixed;
-    top:0;
-    bottom:0;
-    left:0;
-    right:0;
+ body {
+     width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+html{
+    scroll-behavior: smooth;
+     width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
 }
 
 
@@ -107,12 +115,13 @@ hr.new1 {
 
 #about_us{
     background-color: 	#f2f2f2;
+   
 }
 
 .topics{
     
     font-family: 'Josefin Slab', serif;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 2px;
     
@@ -130,7 +139,15 @@ hr.new1 {
 }
 .abt_us_para{
     font-family: 'Ruda', sans-serif;
-    font-size: 120%;
+    font-size: 100%;
     line-height: 170%;
     letter-spacing: 1px;
+}
+
+
+/* Footer */
+#footer{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
 }
