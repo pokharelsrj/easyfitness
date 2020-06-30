@@ -20,6 +20,8 @@ body {
     min-height: 100%;
     overflow-x: hidden;
     overflow: visible;
+    
+    
      
 }
 html{
@@ -31,7 +33,7 @@ html{
     overflow-x: hidden;
     position: relative;
     min-height: 100%;
-   overflow: visible;
+   
 }
 
 
@@ -169,11 +171,14 @@ hr.new1 {
 
 #container{
     min-height: 100%;
+    float: left;
+    margin: 0;
+    width: 100%;
     
 }
 
 #main{
-    overflow: auto;
+    overflow: hidden;
     padding-bottom: 170px;
 }
 
