@@ -12,8 +12,32 @@
     
     <body>
       
+          <script>
+	$(document).ready(function(){
+		$("#myModal").modal('show');
+	});
+</script>
           
-          
+        <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Developed By: Srijan Pokharel</h4>
+                
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                
+            </div>
+            <div class="modal-body">
+                <h4>Overview</h4>
+				<p>All the webpages in this website were developed using simple HTML, CSS, Bootstrap and Javascript.</p>
+                <p>I've used angular JS on the page <b>Workout Game</b> to add the names of workout.</p>
+                <p>There are forms on <b>Our Trial Membership</b> and <b>Fitness Forum</b> pages.</p>
+                <p>There is a Download feature on the <b>Workout Plans</b> page.</p>
+                <p>Hope you have a great time surfing this page :)</p>
+            </div>
+        </div>
+    </div>
+</div>
     <div class="container-flex" style="background-color: black;">
         <div class="row">
             <div class="col-sm-3">
@@ -49,10 +73,11 @@
                 <div class="collapse navbar-collapse" id="navbarCollapse">
             
                     <div class="navbar-nav ml-auto">
-                        <a href="#about_us" class="nav-item nav-link">About Us</a>
+                        <a href="#about_us" class="nav-item nav-link active">About Us</a>
                         <a href="workoutplan.html" class="nav-item nav-link">Workout Plans</a>
                         <a href="forum.html" class="nav-item nav-link">Fitness Forum</a>
-                        <a href="#" class="nav-item nav-link">Contact Us</a>
+                        <a href="trial.html" class="nav-item nav-link">Trial Membership</a>
+                        <a href="game.html" class="nav-item nav-link">Workout Game</a>
                     </div>
                 </div>
             </nav>

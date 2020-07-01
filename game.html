@@ -1,0 +1,180 @@
+<html ng-app="addSkills">
+    <head>
+<link rel="shortcut icon" href="images/logo1.png" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+     
+        <title>Easy Fitness Club</title>
+    </head>
+    
+    <body ng-controller="addSkillsController">
+      
+          
+          
+    <div class="container-flex" style="background-color: black;">
+        <div class="row">
+            <div class="col-sm-3">
+        <img src="images/logo2.png" height="60px" width="140px" style="margin-top: 20px; margin-left: 20px;">
+            </div>
+            <div class="col-sm-6">
+            <div class="alert alert-danger alert-dismissible fade show" style="margin-top: 10px;">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+   <marquee> <strong>Important Notice: </strong> This is to inform all the members that all our branches are closed due to this unforeseen pandemic till further notice. Keep yourself fit <span style="color:red;">at home</span> with our home workout plans.</marquee>
+  </div>
+            </div>
+            <div class="col-sm-3" style="color:white;">
+                <div class="float-right" style="margin-right: 20px; margin-top:5px;">
+                    <a href="https://www.facebook.com/pokharelsrj" class="fa fa-facebook" target="_blank"></a>
+                    <a href="https://twitter.com/pokharelsrj" class="fa fa-twitter" target="_blank"></a>
+                    <a href="https://www.instagram.com/srijan_pokharel/" class="fa fa-instagram" target="_blank"></a>
+                    <a href="https://www.youtube.com/user/SuperSrijan1" class="fa fa-youtube" target="_blank"></a><br>
+                    <i class="fa fa-phone" aria-hidden="true"></i>+977-6634755
+                    </div>
+            </div>
+     </div>
+        
+        </div>   
+       <hr class="new1">
+    <div class="main-div">
+        
+            <nav class="navbar navbar-expand-md sticky-top navbar-dark" style="background-color: rgb(0,0,0);">
+                <a href="index.html" class="navbar-brand active"><span style="color:red;">Easy Fitness</span> Club</a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+            
+                    <div class="navbar-nav ml-auto">
+                        <a href="index.html#about_us" class="nav-item nav-link">About Us</a>
+                        <a href="workoutplan.html" class="nav-item nav-link">Workout Plans</a>
+                        <a href="forum.html" class="nav-item nav-link">Fitness Forum</a>
+                        <a href="trial.html" class="nav-item nav-link">Trial Membership</a>
+                        <a href="game.html" class="nav-item nav-link active" >Workout Game</a>
+                    </div>
+                </div>
+            </nav>
+                <div id="container">
+            <div id="main">
+            
+                <div class="container">
+                
+                    <div class="row">
+                   
+                        <div class="col" style="padding-top: 30px;">
+                        
+                           <center> <h4>Name all of the exercises and send us a screenshot to win our gym merchandise.</h4></center> 
+                        
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="container-flex">
+                
+                    <div class="row" style="padding-top: 60px;">
+                     <div class="col-sm-8" style="padding-left: 60px;">
+                         <img src="images/deadlift.jpg" class="img-rounded" alt="Cinque Terre" width="300" height="200" style="margin-right: 150px;margin-bottom: 30px;"> 
+                         <img src="images/row.jpg" class="img-rounded" alt="Cinque Terre" width="300" height="200" style="margin-bottom: 30px;"><br>
+                         <img src="images/legextension.jpg" class="img-rounded" alt="Cinque Terre" width="300" height="200" style="margin-right: 150px;margin-bottom: 30px;"> 
+                         <img src="images/legpress.jpg" class="img-rounded" alt="Cinque Terre" width="300" height="200" style="margin-bottom: 30px;"><br>
+                         <img src="images/shoulder.jpg" class="img-rounded" alt="Cinque Terre" width="300" height="200" style="margin-right: 150px;margin-bottom: 30px;"> 
+                         <img src="images/lunges.png" class="img-rounded" alt="Cinque Terre" width="300" height="200" style="margin-bottom: 30px;"><br>
+                
+                        </div>
+                        <div class="col-sm-4 def" style="padding-right: 50px;">
+                                <h3>Name the Exercises</h3>
+                            <br>
+                                       <form name="skillsFrm" ng-submit="addSkill()">
+                                     <input type="text" name="newSkill" ng-model="newSkill" required / style="  border: 0;
+  margin-right: 5px;
+  background: transparent;
+  border-bottom: 1px solid black;
+  width: 80px;
+  padding: 8px;
+  @include transition(all .3s ease);
+  
+  &:focus, &:active {
+    outline: 0;
+    width: 200px;
+    border-bottom-color: $melon;
+  }">
+                                     <button ng-disabled="skillsFrm.$invalid" ng-click="addSkill()" style="background-color: #F97D75;
+  border: 0;
+  padding: 8px 20px;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+  &:focus, &:active {
+    outline: 0;
+  }">Add</button>
+                                  </form>
+                                <br><br>
+                                  <ul style="list-style: none;
+  padding-left: 0;
+  margin-top: 25px;">
+                                    <li ng-repeat="skill in skills" class="{'fadeOut' : skill.done}" style="border: 1px solid black;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-transform: capitalize;">
+                                      
+                                      <span>{{skill.title}}</span>
+                                        <i class="fa fa-times" ng-click="deleteSkill($index)"></i>
+                                    </li>
+                                  </ul>
+                        <script>
+        angular
+	.module('addSkills', [])
+	.controller('addSkillsController', ['$scope', function($scope) {
+
+		$scope.skills = [];
+
+		$scope.addSkill = function() {
+			$scope.skills.push({'title': $scope.newSkill, 'done':false})
+			$scope.newSkill = ''
+		}
+
+		$scope.deleteSkill = function(index) {	
+			$scope.skills.splice(index, 1);
+		}
+	}])
+        </script>
+                        </div>
+                    </div>
+                </div>
+        
+        </div>
+        </div>
+        
+<div id="footer" style="background-color: black; color:white;">
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10" style="text-align: center;">
+                    <h3><span style="color: red;">Easy Fitness</span> Club</h3>
+                    <i class="fa fa-address-card-o" aria-hidden="true"></i>Lokanthali, Bhaktapur<br> 
+                    <hr style="border-top: 0.5px dashed white;">
+                &copy; 2020 Easy Fitness Club. All Rights Reserved
+                        
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+        </div>
+</div>     
+       </div> 
+            
+    </body>
+    
+    
+</html>
+
+
+
